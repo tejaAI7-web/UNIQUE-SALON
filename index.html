@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQUE SALON - Premium Hair & Beauty Studio</title>
+    <!-- Tailwind CSS Framework CDN Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Google Fonts Framework Interface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .luxury-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.65));
+        }
+        .testimonial-slide {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .testimonial-slide.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] text-[#2c2c2c] font-sans antialiased selection:bg-[#3f4e3c] selection:text-white">
+
+    <!-- Top Informational Notification Ribbon Component -->
+    <div class="bg-[#3f4e3c] text-[#fdfbf7] text-xs tracking-widest uppercase py-2.5 px-4 text-center font-medium">
+        ✨ Look Good, Feel Beautiful — Premium Hair & Beauty Services in Hyderabad
+    </div>
+
+    <!-- Main Navigation Bar Component -->
+    <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b border-[#3f4e3c]/10">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl lg:text-3xl font-semibold tracking-wider text-[#3f4e3c]">UNIQUE SALON</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm tracking-wider font-medium text-[#5a5a5a]">
+                <a href="#about" class="hover:text-[#3f4e3c] transition-colors">About Us</a>
+                <a href="#services" class="hover:text-[#3f4e3c] transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-[#3f4e3c] transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-[#3f4e3c] transition-colors">Contact</a>
+            </div>
+            <a href="https://wa.me/919390249632" target="_blank" class="bg-[#3f4e3c] hover:bg-[#2d3a2b] text-white text-xs tracking-widest uppercase font-medium px-6 py-3 transition-all duration-300">
+                Book Appointment
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Showcase View Section -->
+    <section class="relative h-[85vh] flex items-center bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="hero-salon-interior.png" alt="Unique Salon Premium Interior Layout" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 luxury-overlay"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 w-full text-white z-10">
+            <p class="font-serif italic text-xl lg:text-2xl text-[#fdfbf7]/80 mb-4 tracking-wide">Look Good, Feel Beautiful</p>
+            <h1 class="font-serif text-5xl lg:text-7xl font-light tracking-tight leading-tight max-w-3xl mb-8">
+                Beauty that Reflects <br><span class="italic font-normal text-[#e6dfd3]">Your Style</span>
+            </h1>
+            <p class="font-light text-base lg:text-lg max-w-xl text-[#e6dfd3]/90 mb-10 tracking-wide leading-relaxed">
+                Experience premium salon & beauty services crafted to bring out the absolute best in you right here in Hyderabad.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://wa.me/919390249632" target="_blank" class="bg-[#fdfbf7] text-[#3f4e3c] hover:bg-[#3f4e3c] hover:text-white text-xs font-semibold tracking-widest uppercase px-8 py-4 transition-all duration-300">
+                    Book Appointment 📅
+                </a>
+                <a href="#services" class="border border-white/60 hover:border-white text-white text-xs font-semibold tracking-widest uppercase px-8 py-4 transition-all duration-300">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Value Proposition Array Section -->
+    <section class="bg-[#3f4e3c] text-[#fdfbf7] py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+                <div class="font-serif italic text-2xl text-[#e6dfd3]">✦</div>
+                <h3 class="text-xs tracking-widest uppercase font-semibold">Expert Stylists</h3>
+                <p class="text-[11px] text-[#e6dfd3]/80 font-light">Trained & Certified</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-serif italic text-2xl text-[#e6dfd3]">✦</div>
+                <h3 class="text-xs tracking-widest uppercase font-semibold">Premium Products</h3>
+                <p class="text-[11px] text-[#e6dfd3]/80 font-light">Top Quality Brands</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-serif italic text-2xl text-[#e6dfd3]">✦</div>
+                <h3 class="text-xs tracking-widest uppercase font-semibold">Hygiene First</h3>
+                <p class="text-[11px] text-[#e6dfd3]/80 font-light">Clean & Safe Environment</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-serif italic text-2xl text-[#e6dfd3]">✦</div>
+                <h3 class="text-xs tracking-widest uppercase font-semibold">Personalized Care</h3>
+                <p class="text-[11px] text-[#e6dfd3]/80 font-light">Just For Your Profile</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Grid Layout Area -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+            <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">Our Professional Menu</span>
+            <h2 class="font-serif text-3xl lg:text-4xl font-normal tracking-wide text-[#3f4e3c]">Beauty & Care, All Under One Roof</h2>
+            <div class="w-12 h-[1px] bg-[#3f4e3c] mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Hair Washing -->
+            <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="hair-wash.png" alt="Hair Wash Treatment Layout" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-6 text-center space-y-2">
+                    <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Hair Washing</h3>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed">Relaxing professional wash, nourishing dynamic hair treatments, and premium clean conditioning.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Hair Styling -->
+            <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="hair-styling.png" alt="Aesthetic Hair Styling Panel" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-6 text-center space-y-2">
+                    <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Hair Styling</h3>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed">Basic hair cutting, premium blowout treatments, and beautiful custom styles executed with expert patience.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Skincare & Facials -->
+            <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="skin-care-facial.jpg" alt="Luxury Sheet Mask Skincare Element" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-6 text-center space-y-2">
+                    <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Skin Care & Facials</h3>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed">Deep hydrating sheets, glowing gold masks, organic facial massages, and highly detailed D-Tan therapy.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Threading & Waxing -->
+            <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
+                <div class="h-80 overflow-hidden relative">
+                    <img src="waxing-threading.jpg" alt="Glow Skin Threading and Waxing Service Grid" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="p-6 text-center space-y-2">
+                    <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Threading & Waxing</h3>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed">Flawless structural eyebrow threading, full arm care, leg waxing, and smooth individual body treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Philosophy Section Showcase -->
+    <section id="about" class="bg-white border-y border-[#3f4e3c]/10 py-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative h-[450px] overflow-hidden">
+                <img src="about-expertise.jpg" alt="Luxury Salon Architectural Split Banner" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="space-y-6">
+                <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">About Our Philosophy</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-normal tracking-wide text-[#3f4e3c] leading-tight">Where Real Beauty <br>Meets Exceptional Expertise</h2>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">
+                    At UNIQUE SALON, we fundamentally believe that beauty care is deeply personal. Our core operational mission is to optimize your natural beauty features through high-performance styling packages, advanced techniques, and a deeply relaxing environment.
+                </p>
+                <ul class="text-sm text-gray-700 space-y-3 font-light">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-[#3f4e3c] font-semibold">✓</span> <span>Professional & Exceptionally Attentive Staff Array</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-[#3f4e3c] font-semibold">✓</span> <span>Budget-Friendly Pricing Matrix Across All Combos</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-[#3f4e3c] font-semibold">✓</span> <span>Strictly Maintained Hygiene & Safety Protocols</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-[#3f4e3c] font-semibold">✓</span> <span>100% Client Satisfaction Guaranteed on Results</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Promo Packages Table Block -->
+    <section class="py-24 bg-[#3f4e3c]/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">Exclusive Offline Deals</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-normal tracking-wide text-[#3f4e3c]">Our Featured Service Combos</h2>
+                <div class="w-12 h-[1px] bg-[#3f4e3c] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 border border-[#3f4e3c]/10 text-center space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Hair Stylist Special</h3>
+                        <div class="text-3xl font-serif text-[#3f4e3c]">₹599<span class="text-xs font-sans text-gray-500 font-light">/-</span></div>
+                        <div class="w-8 h-[1px] bg-gray-200 mx-auto"></div>
+                        <p class="text-xs text-gray-500 font-light leading-relaxed">Includes professional Basic Hair Cut + refreshing Hair Wash + deep conditioning treatment.</p>
+                    </div>
+                    <a href="https://wa.me/919390249632" target="_blank" class="w-full block bg-[#3f4e3c] hover:bg-[#2d3a2b] text-white text-xs font-medium tracking-widest uppercase py-3 transition-colors duration-300">Book Combo</a>
+                </div>
+
+                <div class="bg-white p-8 border-2 border-[#3f4e3c] text-center space-y-6 relative flex flex-col justify-between shadow-xl">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#3f4e3c] text-white text-[9px] tracking-widest uppercase py-1 px-4 font-semibold">Most Popular</div>
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Full Luxury Package</h3>
+                        <div class="text-4xl font-serif text-[#3f4e3c]">₹1499<span class="text-xs font-sans text-gray-500 font-light">/-</span></div>
+                        <div class="w-8 h-[1px] bg-gray-200 mx-auto"></div>
+                        <p class="text-xs text-gray-600 font-normal leading-relaxed">The complete transformation kit: Premium D-Tan + Glowing Facial + Full Hands Care + Underarms + Full Legs + Eyebrow Threading.</p>
+                    </div>
+                    <a href="https://wa.me/919390249632" target="_blank" class="w-full block bg-[#3f4e3c] hover:bg-[#2d3a2b] text-white text-xs font-medium tracking-widest uppercase py-3 transition-colors duration-300">Book Mega Pack</a>
+                </div>
+
+                <div class="bg-white p-8 border border-[#3f4e3c]/10 text-center space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Waxing & Grooming Pack</h3>
+                        <div class="text-3xl font-serif text-[#3f4e3c]">₹599<span class="text-xs font-sans text-gray-500 font-light">/-</span></div>
+                        <div class="w-8 h-[1px] bg-gray-200 mx-auto"></div>
+                        <p class="text-xs text-gray-500 font-light leading-relaxed">Essential body maintenance tracking Full Hand waxing + Half Legs waxing + Underarms grooming + crisp Eyebrow Threading.</p>
+                    </div>
+                    <a href="https://wa.me/919390249632" target="_blank" class="w-full block bg-[#3f4e3c] hover:bg-[#2d3a2b] text-white text-xs font-medium tracking-widest uppercase py-3 transition-colors duration-300">Book Combo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic 5-Second Rotational Google Review Testimonial Banner -->
+    <section id="testimonials" class="py-24 max-w-4xl mx-auto px-6 text-center">
+        <div class="space-y-3 mb-12">
+            <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">Verified Client Love</span>
+            <h2 class="font-serif text-3xl lg:text-4xl font-normal tracking-wide text-[#3f4e3c]">Real Google Reviews</h2>
+            <div class="w-12 h-[1px] bg-[#3f4e3c] mx-auto mt-4"></div>
+        </div>
+
+        <div class="bg-white p-10 md:p-16 border border-[#3f4e3c]/10 shadow-sm relative min-h-[300px] flex items-center justify-center">
+            <!-- Review 1 -->
+            <div class="testimonial-slide active space-y-6">
+                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
+                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
+                    "Just visited UNIQUE SALON. There is a great receiving by the staff. I just got my hair and facial donee in a very reasonable price. I was very happy by the result after my facial. The way they handled is really smooth. I must say THIS IS A MUST VISIT SALON! VERY WELL DONE! THANK YOU[span_0](start_span)"[span_0](end_span)
+                </p>
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sri Sahithi[span_1](start_span)[span_1](end_span)</h4>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-slide space-y-6">
+                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
+                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
+                    "I recently visited Unique saloon for facial, Threading and D Tan and it was a fantastic experience! The staff was incredibly professional and attentive, ensuring that I was comfortable throughout my visit... I highly recommend unique saloon for anyone looking for top-notch beauty services.[span_2](start_span)"[span_2](end_span)
+                </p>
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Doolam Akshaya[span_3](start_span)[span_3](end_span)</h4>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-slide space-y-6">
+                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
+                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
+                    "The team provided the best haircut and facial for my skin and hair. The team provided me the amazing facial massage. Mainly i want to mention the very talented hairstylist, she changed my entire look. I absolutely loved it. Thanks a lot, and keep up the good work[span_4](start_span)!"[span_4](end_span)
+                </p>
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sowmya Vadlapatla[span_5](start_span)[span_5](end_span)</h4>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="testimonial-slide space-y-6">
+                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
+                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
+                    "Just visited salon! Had a great experience. I just got my pedicure done. (BUDGET FRIENDLY). The products they used are too good. Very well maintained with hygiene. VERY HAPPY WITH THE RESULTS. THANK YOU SO MUCH[span_6](start_span)!"[span_6](end_span)
+                </p>
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sridevi Devineni[span_7](start_span)[span_7](end_span)</h4>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="testimonial-slide 
