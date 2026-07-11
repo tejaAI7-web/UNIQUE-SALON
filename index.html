@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIQUE SALON - Premium Hair & Beauty Studio</title>
-    <!-- Tailwind CSS Framework CDN Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Premium Google Fonts Framework Interface -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght=300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -28,7 +26,6 @@
         }
         .testimonial-slide {
             display: none;
-            transition: opacity 0.5s ease-in-out;
         }
         .testimonial-slide.active {
             display: block;
@@ -37,12 +34,10 @@
 </head>
 <body class="bg-[#fdfbf7] text-[#2c2c2c] font-sans antialiased selection:bg-[#3f4e3c] selection:text-white">
 
-    <!-- Top Informational Notification Ribbon Component -->
     <div class="bg-[#3f4e3c] text-[#fdfbf7] text-xs tracking-widest uppercase py-2.5 px-4 text-center font-medium">
         ✨ Look Good, Feel Beautiful — Premium Hair & Beauty Services in Hyderabad
     </div>
 
-    <!-- Main Navigation Bar Component -->
     <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b border-[#3f4e3c]/10">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="font-serif text-2xl lg:text-3xl font-semibold tracking-wider text-[#3f4e3c]">UNIQUE SALON</a>
@@ -58,7 +53,6 @@
         </nav>
     </header>
 
-    <!-- Hero Showcase View Section -->
     <section class="relative h-[85vh] flex items-center bg-gray-900 overflow-hidden">
         <div class="absolute inset-0">
             <img src="hero-salon-interior.png" alt="Unique Salon Premium Interior Layout" class="w-full h-full object-cover object-center" />
@@ -83,7 +77,6 @@
         </div>
     </section>
 
-    <!-- Brand Value Proposition Array Section -->
     <section class="bg-[#3f4e3c] text-[#fdfbf7] py-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div class="space-y-2">
@@ -109,7 +102,6 @@
         </div>
     </section>
 
-    <!-- Core Services Grid Layout Area -->
     <section id="services" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
             <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">Our Professional Menu</span>
@@ -118,7 +110,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Card 1: Hair Washing -->
             <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
                 <div class="h-80 overflow-hidden relative">
                     <img src="hair-wash.png" alt="Hair Wash Treatment Layout" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
@@ -129,7 +120,6 @@
                 </div>
             </div>
 
-            <!-- Card 2: Hair Styling -->
             <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
                 <div class="h-80 overflow-hidden relative">
                     <img src="hair-styling.png" alt="Aesthetic Hair Styling Panel" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
@@ -140,10 +130,9 @@
                 </div>
             </div>
 
-            <!-- Card 3: Skincare & Facials -->
             <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
                 <div class="h-80 overflow-hidden relative">
-                    <img src="skin-care-facial.jpg" alt="Luxury Sheet Mask Skincare Element" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                    <img src="skin-care-facial.jpg" alt="Skincare Element" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div class="p-6 text-center space-y-2">
                     <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Skin Care & Facials</h3>
@@ -151,10 +140,9 @@
                 </div>
             </div>
 
-            <!-- Card 4: Threading & Waxing -->
             <div class="bg-white border border-[#3f4e3c]/5 overflow-hidden transition-all duration-300 hover:shadow-xl group">
                 <div class="h-80 overflow-hidden relative">
-                    <img src="waxing-threading.jpg" alt="Glow Skin Threading and Waxing Service Grid" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                    <img src="waxing-threading.jpg" alt="Threading and Waxing Service Grid" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div class="p-6 text-center space-y-2">
                     <h3 class="font-serif text-xl text-[#3f4e3c] font-medium">Threading & Waxing</h3>
@@ -164,11 +152,10 @@
         </div>
     </section>
 
-    <!-- About Philosophy Section Showcase -->
     <section id="about" class="bg-white border-y border-[#3f4e3c]/10 py-20">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="relative h-[450px] overflow-hidden">
-                <img src="about-expertise.jpg" alt="Luxury Salon Architectural Split Banner" class="w-full h-full object-cover object-center" />
+                <img src="about-expertise.jpg" alt="Luxury Salon Split Banner" class="w-full h-full object-cover object-center" />
             </div>
             <div class="space-y-6">
                 <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">About Our Philosophy</span>
@@ -194,7 +181,6 @@
         </div>
     </section>
 
-    <!-- Exclusive Promo Packages Table Block -->
     <section class="py-24 bg-[#3f4e3c]/5">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
@@ -238,7 +224,6 @@
         </div>
     </section>
 
-    <!-- Dynamic 5-Second Rotational Google Review Testimonial Banner -->
     <section id="testimonials" class="py-24 max-w-4xl mx-auto px-6 text-center">
         <div class="space-y-3 mb-12">
             <span class="text-xs font-semibold tracking-widest text-[#3f4e3c] uppercase">Verified Client Love</span>
@@ -246,42 +231,65 @@
             <div class="w-12 h-[1px] bg-[#3f4e3c] mx-auto mt-4"></div>
         </div>
 
-        <div class="bg-white p-10 md:p-16 border border-[#3f4e3c]/10 shadow-sm relative min-h-[300px] flex items-center justify-center">
-            <!-- Review 1 -->
-            <div class="testimonial-slide active space-y-6">
-                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
-                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
-                    "Just visited UNIQUE SALON. There is a great receiving by the staff. I just got my hair and facial donee in a very reasonable price. I was very happy by the result after my facial. The way they handled is really smooth. I must say THIS IS A MUST VISIT SALON! VERY WELL DONE! THANK YOU[span_0](start_span)"[span_0](end_span)
-                </p>
-                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sri Sahithi[span_1](start_span)[span_1](end_span)</h4>
-            </div>
+        <div class="bg-white p-4 border border-[#3f4e3c]/10 shadow-md max-w-lg mx-auto rounded-xl overflow-hidden flex items-center justify-center min-h-[220px]">
+            <img src="review1.png" class="testimonial-slide active max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 1">
+            <img src="review2.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 2">
+            <img src="review3.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 3">
+            <img src="review4.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 4">
+            <img src="review5.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 5">
+            <img src="review6.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 6">
+            <img src="review7.png" class="testimonial-slide max-w-full h-auto object-contain rounded-lg" alt="Google Review Screenshot 7">
+        </div>
+    </section>
 
-            <!-- Review 2 -->
-            <div class="testimonial-slide space-y-6">
-                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
-                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
-                    "I recently visited Unique saloon for facial, Threading and D Tan and it was a fantastic experience! The staff was incredibly professional and attentive, ensuring that I was comfortable throughout my visit... I highly recommend unique saloon for anyone looking for top-notch beauty services.[span_2](start_span)"[span_2](end_span)
+    <footer id="contact" class="bg-[#1f261d] text-[#e6dfd3] pt-20 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-16 mb-12">
+            <div class="space-y-4">
+                <h3 class="font-serif text-2xl tracking-wider text-white">UNIQUE SALON</h3>
+                <p class="text-xs text-[#e6dfd3]/70 font-light leading-relaxed max-w-sm">
+                    Elevating daily skincare, haircuts, and specialized aesthetic package services with verified 5-star quality controls in Hyderabad.
                 </p>
-                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Doolam Akshaya[span_3](start_span)[span_3](end_span)</h4>
             </div>
-
-            <!-- Review 3 -->
-            <div class="testimonial-slide space-y-6">
-                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
-                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
-                    "The team provided the best haircut and facial for my skin and hair. The team provided me the amazing facial massage. Mainly i want to mention the very talented hairstylist, she changed my entire look. I absolutely loved it. Thanks a lot, and keep up the good work[span_4](start_span)!"[span_4](end_span)
+            <div class="space-y-4">
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-white">Operational Details</h4>
+                <p class="text-xs text-[#e6dfd3]/70 font-light leading-relaxed">
+                    📍 Ground floor, Plot No: 25, 295, Allapur Rd, Gayatri Nagar, Allapur, Borabanda, Hyderabad, Telangana 500018
                 </p>
-                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sowmya Vadlapatla[span_5](start_span)[span_5](end_span)</h4>
-            </div>
-
-            <!-- Review 4 -->
-            <div class="testimonial-slide space-y-6">
-                <div class="text-[#3f4e3c] text-xl">★★★★★</div>
-                <p class="text-base md:text-lg text-gray-600 font-light italic leading-relaxed max-w-2xl mx-auto">
-                    "Just visited salon! Had a great experience. I just got my pedicure done. (BUDGET FRIENDLY). The products they used are too good. Very well maintained with hygiene. VERY HAPPY WITH THE RESULTS. THANK YOU SO MUCH[span_6](start_span)!"[span_6](end_span)
+                <p class="text-xs text-[#e6dfd3]/70 font-light">
+                    📞 Phone Line: <a href="tel:09390249632" class="hover:underline">093902 49632</a>
                 </p>
-                <h4 class="text-xs tracking-widest uppercase font-semibold text-[#3f4e3c] mt-4">— Sridevi Devineni[span_7](start_span)[span_7](end_span)</h4>
             </div>
+            <div class="space-y-4">
+                <h4 class="text-xs tracking-widest uppercase font-semibold text-white">Timings Framework</h4>
+                <p class="text-xs text-[#e6dfd3]/70 font-light">Open Daily: 10:00 AM – 9:00 PM</p>
+                <div class="pt-2">
+                    <a href="https://wa.me/919390249632" target="_blank" class="inline-block bg-[#3f4e3c] hover:bg-[#2e3b2c] text-white text-[11px] tracking-widest uppercase font-medium px-6 py-3 transition-colors">
+                        Open Chat via WhatsApp 💬
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#e6dfd3]/40 font-light">
+            <p>© 2026 UNIQUE SALON. All Rights Reserved.</p>
+            <p class="mt-2 sm:mt-0">Designed & Engineered by Rohit Portfolio Systems</p>
+        </div>
+    </footer>
 
-            <!-- Review 5 -->
-            <div class="testimonial-slide 
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        
+        function nextSlide() {
+            if (slides.length > 0) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+        }
+        
+        // Triggers automated transition sequence every 5000ms (5 seconds)
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
+
